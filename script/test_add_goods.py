@@ -16,8 +16,8 @@ class TestAddGoods():
     def setup_method(self):
         self.driver.get("http://localhost/index.php/Admin/Index/index")
 
-    @pytest.mark.parametrize(("g_name","caregory_one","caregory_two","caregory_three","desc","band","supplier","sell","market_price"),build_data("tp_good_data"))
-    def test_add_goods(self,g_name,caregory_one,caregory_two,caregory_three,desc,band,supplier,sell,market_price):
+    @pytest.mark.parametrize(("g_name","caregory_one","caregory_two","caregory_three","desc","band","supplier","sell","market_price","file_name"),build_data("tp_good_data"))
+    def test_add_goods(self,g_name,caregory_one,caregory_two,caregory_three,desc,band,supplier,sell,market_price,file_name):
         admin = AdminLoginPage()
         admin.tp_admin_login("admin","123456","8888")
         admin.find_el((By.NAME,"submit")).click()
@@ -26,5 +26,5 @@ class TestAddGoods():
         admin_index.tp_admin_click_goodsControll()
         # 添加商品对象操作
         good = AdminAddGoodsPage()
-        good.tp_add_good(g_name,caregory_one,caregory_two,caregory_three,desc,band,supplier,sell,market_price)
-        time.sleep(1)
+        good.tp_add_good(g_name,caregory_one,caregory_two,caregory_three,desc,band,supplier,sell,market_price,file_name)
+        time.sleep(2)
