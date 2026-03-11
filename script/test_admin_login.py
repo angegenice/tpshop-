@@ -1,5 +1,6 @@
 from utils import DriverUtils,build_data,get_el_text
 from page.admin_login_page import AdminLoginPage
+from page.admin_index_page import AdminIndexPage
 from selenium.webdriver.common.by import By
 import pytest
 import time

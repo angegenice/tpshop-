@@ -1,0 +1,13 @@
+{
+    "测试商品数据案例":{
+        "g_name":"大米手机",
+        "caregory_one":"31",
+        "caregory_two":"32",
+        "caregory_three":"62",
+        "desc":"全球70亿人都在用大米手机吃大米",
+        "band":"2",
+        "supplier":"3",
+        "sell":"799",
+        "market_price":"899"
+    }
+}

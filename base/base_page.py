@@ -29,7 +29,7 @@ class BasePage():
             logging.error(f"input {text} failed")
             
 
-    # frame切换
+    # frame切换 
     def switch_frame(self, i_el):
         try:
             self.driver.switch_to.frame(i_el)
