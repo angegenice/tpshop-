@@ -1,4 +1,4 @@
-from utils import DriverUtils
+from utils import DriverUtils,el_is_exist_by_text
 from selenium.webdriver.common.by import By
 from page.login_page import LoginPage
 from page.search_page import SearchPage
@@ -23,5 +23,6 @@ class TestAddCat():
         login.tp_login("15801010201","123456","8888")
         # 搜索加入购物车
         search = SearchPage()
-        search.tp_search_to_add("手机")
+        msg = search.tp_search_to_add("手机")
         time.sleep(0.5)
+        assert "添加成功" in msg
