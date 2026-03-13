@@ -31,6 +31,7 @@ class BasePage():
 
     # frame切换 
     def switch_frame(self, i_el):
+        """i_el: frame元素"""
         try:
             self.driver.switch_to.frame(i_el)
             logging.info(f"switch iframe success!")
