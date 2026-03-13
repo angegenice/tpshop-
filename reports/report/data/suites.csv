@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5298","test_add_cat","script","2026-03-13","passed","2026-03-13","TestAddCat","test_add_cat","",""
